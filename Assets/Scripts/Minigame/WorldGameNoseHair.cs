@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class WorldGameNoseHair : MonoBehaviour {
 
-    void Start() {
+    HingeJoint2D thisHinge;
 
+    void Start() {
+        thisHinge = this.GetComponent<HingeJoint2D>();
     }
 
     void Update() {
-
+        double angleAtTimeT = this.transform.eulerAngles.z;
+        print(thisHinge.limits.min);
+        print(thisHinge.limits.max);
     }
+
 }
