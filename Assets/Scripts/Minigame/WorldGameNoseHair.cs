@@ -12,8 +12,7 @@ public class WorldGameNoseHair : MonoBehaviour {
 
     void Update() {
         double angleAtTimeT = this.transform.eulerAngles.z;
-        print(thisHinge.limits.min);
-        print(thisHinge.limits.max);
+        
     }
 
 }
